@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MainApplication</name>
+    </assembly>
+    <members>
+        <member name="T:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule">
+            <summary>
+            列印功能的抽象類別
+            </summary>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.#ctor">
+            <summary>
+            列印功能建構子
+            </summary>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.setParameters(System.Drawing.Printing.PrintDocument,System.Windows.Forms.PrintPreviewDialog,System.Windows.Forms.PrintDialog,System.Windows.Forms.PageSetupDialog,System.Windows.Forms.TextBox)">
+            <summary>
+            提供前端使用者介面設定列印控制項
+            </summary>
+            <param name="printDocument1"></param>
+            <param name="printPreviewDialog1"></param>
+            <param name="printDialog1"></param>
+            <param name="pageSetupDialog1"></param>
+            <param name="textBox1"></param>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.printDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            列印功能回呼函式
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.print">
+            <summary>
+            列印操作
+            </summary>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.preview">
+            <summary>
+            預覽列印操作
+            </summary>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.setPageLayot">
+            <summary>
+            設定頁面操作
+            </summary>
+        </member>
+        <member name="M:MainApplication.LogicLayer.Backend.PrintingModule.AbPrintingModule.setPrintintConfigLayout">
+            <summary>
+            為了廠商設定自己的列印組態操作
+            </summary>
+        </member>
+        <member name="T:MainApplication.PresentationLayer.BackendSubsystemFactory.AbVenusBackendFactory">
+            <summary>
+            使用者介面存取後端服務的抽象類別產生工廠
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.BackendSubsystemFactory.AbVenusBackendFactory.createPrintingModuleMethod(System.Int32)">
+            <summary>
+            產生列印物件的方法
+            </summary>
+            <param name="printingModuleName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MainApplication.PresentationLayer.BackendSubsystemFactory.PrintingModuleFactoryImp">
+            <summary>
+            使用者介面存取後端服務的列印模組工廠實作類別
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.BackendSubsystemFactory.PrintingModuleFactoryImp.createPrintingModuleMethod(System.Int32)">
+            <summary>
+            產生Venus專案的後端列印模組方法實作
+            </summary>
+            <param name="printingModuleName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MainApplication.LogicLayer.Backend.PrintingModule.VenusPrintingModuleImp">
+            <summary>
+            Venus列印函式實作類別
+            </summary>
+        </member>
+        <member name="T:MainApplication.PresentationLayer.BackendSubsystemFactory.EnumPrintingModule">
+            <summary>
+            列印模組選擇列舉
+            </summary>
+        </member>
+        <member name="F:MainApplication.PresentationLayer.Views.JasonTestView.JasonTestView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.JasonTestView.JasonTestView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.JasonTestView.JasonTestView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MainApplication.PresentationLayer.Views.RebeccaTestView.RebeccaTEST.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.RebeccaTestView.RebeccaTEST.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.RebeccaTestView.RebeccaTEST.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MainApplication.PresentationLayer.Views.RebeccaTestView.RebeccaTestView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.RebeccaTestView.RebeccaTestView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.RebeccaTestView.RebeccaTestView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MainApplication.PresentationLayer.Views.XavierTestView.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.XavierTestView.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.XavierTestView.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MainApplication.PresentationLayer.Views.XavierTestView.TestBackendPrintingModule.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.XavierTestView.TestBackendPrintingModule.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.XavierTestView.TestBackendPrintingModule.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MainApplication.PresentationLayer.Views.ZackTestView.ZackTestView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.ZackTestView.ZackTestView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MainApplication.PresentationLayer.Views.ZackTestView.ZackTestView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:MainApplication.Program.Main">
+            <summary>
+            應用程式的主要進入點。
+            </summary>
+        </member>
+        <member name="T:MainApplication.Properties.Resources">
+            <summary>
+              用於查詢當地語系化字串等的強型別資源類別
+            </summary>
+        </member>
+        <member name="P:MainApplication.Properties.Resources.ResourceManager">
+            <summary>
+              傳回這個類別使用的快取的 ResourceManager 執行個體。
+            </summary>
+        </member>
+        <member name="P:MainApplication.Properties.Resources.Culture">
+            <summary>
+              覆寫目前執行緒的 CurrentUICulture 屬性，對象是所有
+              使用這個強型別資源類別的資源查閱。
+            </summary>
+        </member>
+    </members>
+</doc>
