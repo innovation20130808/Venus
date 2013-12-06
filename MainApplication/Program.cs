@@ -18,7 +18,7 @@ namespace MainApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TestBackendPrintingModule());
+            Application.Run(new TestBackendMovieManagementModule());
         }
     }
 }
